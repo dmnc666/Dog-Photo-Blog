@@ -1,92 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOG PHOTO BLOG</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css">
+   
+  </head>
+  <body>
     <!------------------------------HERO SECTION--------------------------------->
     <h1>Dog Photo Blog</h1>
     <!--------------END OF HERO SECTION------------------->
 
-
-
     <!------------------------------MAIN SECTION-------------------------------->
     <main>
-    <!-----ABOUT SECTION----->
-    <section>
+      <!-----ABOUT SECTION----->
+      <section class="section1">
         <h2>Dog Photos</h2>
-        <p>Click here to view more <a href="#" target="_blank">dog photos</a></p>
+        <p>
+          Click here to view more <a href="#" target="_blank">dog photos</a>
+        </p>
         <a href="#">
-            <figure>
-                 <img src="images/pugunicorn.jpg" alt="Pug Unicorn" width="600px" height="400px">
-            </figure>
+          <figure>
+            <img
+              src="images/pugunicorn.jpg"
+              alt="Pug Unicorn"
+              width="600px"
+              height="400px"
+            />
+          </figure>
         </a>
-    </section>
-    
-    <!-----FEATURED SECTION----->
-    <section>
+      </section>
+
+      <!-----FEATURED SECTION----->
+      <section>
         <h2>Dog Lists</h2>
 
-        <h3>Things Dogs Love: </h3>
+        <h3>Things Dogs Love:</h3>
         <ul>
-            <li>Seeing their human</li>
-            <li>Dog treats</li>
-            <li>Dog toys</li>
+          <li>Seeing their human</li>
+          <li>Dog treats</li>
+          <li>Dog toys</li>
         </ul>
         <figure>
-            <img src="images/pexels-rodnae-productions-7310213.jpg" alt="My doggy treats" width="300px" height="400px">
-            <figcaption>My dog <em>loves</em> treats</figcaption>
+          <img
+            src="images/pexels-rodnae-productions-7310213.jpg"
+            alt="My doggy treats"
+            width="300px"
+            height="400px"
+          />
+          <figcaption>My dog <em>loves</em> treats</figcaption>
         </figure>
 
-        <h3>Three things dogs hate: </h3>
+        <h3>Three things dogs hate:</h3>
         <ol>
-            <li>Cats</li>
-            <li>Taking a bath</li>
-            <li>Being left alone</li>
+          <li>Cats</li>
+          <li>Taking a bath</li>
+          <li>Being left alone</li>
         </ol>
         <figure>
-            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=%5B900%2C533%5D&w=2000&h=1333&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F03%2F12%2Fpomeranian-white-puppy-921029690-2000.jpg" alt="Cute puppy from google" width="550px" height="400px">
-            <figcaption>Dogs <strong>love</strong> their humans</figcaption>
+          <img
+            src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=%5B900%2C533%5D&w=2000&h=1333&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F03%2F12%2Fpomeranian-white-puppy-921029690-2000.jpg"
+            alt="Cute puppy from google"
+            width="550px"
+            height="400px"
+          />
+          <figcaption>Dogs <strong>love</strong> their humans</figcaption>
         </figure>
-    </section>
-    
-    <!-----FORM SECTION------->
-    <section>
+      </section>
+
+      <!-----FORM SECTION------->
+      <section>
         <h2>Dog Form</h2>
         <form action="#">
+          <fieldset>
+            <legend>Is your dog an indoor or an outdoor dog?</legend>
+            <label>
+              <input
+                id="indoor"
+                value="indoor"
+                type="radio"
+                name="indoor-outdoor" 
+                checked
+              />Indoor</label
+            >
+            <label>
+              <input
+                id="outdoor"
+                value="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+              />Outdoor</label
+            >
+          </fieldset>
 
-            <fieldset>
-                <legend>Is your dog an indoor or an outdoor dog? </legend>
-            <label> <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor</label>
-            <label> <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor</label> 
-            </fieldset>
+          <fieldset>
+            <legend>What is your dogs personality?</legend>
+            <input
+              id="loving"
+              value="loving"
+              type="checkbox"
+              name="pesonality"
+              checked
+            /><label for="loving">Loving</label>
+            <input
+              id="lazy"
+              value="lazy"
+              type="checkbox"
+              name="pesonality"
+            /><label for="lazy">Lazy</label>
+            <input
+              id="energetic"
+              value="energetic"
+              type="checkbox"
+              name="pesonality"
+            /><label for="energetic">Energetic</label>
+          </fieldset>
 
-            <fieldset>
-                <legend>What is your dogs personality? </legend>
-                <input id="loving" value="loving" type="checkbox" name="pesonality"><label for="loving">Loving</label>
-                <input id="lazy" value="lazy" type="checkbox" name="pesonality"><label for="lazy">Lazy</label>
-                <input id="energetic" value="energetic" type="checkbox" name="pesonality"><label for="energetic">Energetic</label>
-                
-            </fieldset>
-
-            <input type="text" name="cuteDogs1" placeholder="Cute dogs url" required>
-            <button type="submit">Submit</button>
-            
+          <input
+            type="text"
+            name="cuteDogs1"
+            placeholder="Cute dogs url"
+            required
+          />
+          <button type="submit">Submit</button>
         </form>
-    </section>
-
+      </section>
     </main>
-    <!---------------END OF MAIN SECTION------------------------------->
-
-
-
+    <!---------------END OF MAIN SECTION------------------------rrrrrrrrr------->
 
     <!--------------FOOTER SECTION------------------->
-
+    <footer>
+        <p>Copyright 2023</p>
+    </footer>
     <!--------------END OF FOOTER SECTION------------------->
-
-</body>
+  </body>
 </html>
